@@ -6,6 +6,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	go.opentelemetry.io/otel v1.0.0-RC3
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.0.0-RC3
+	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.0.0-RC3
 	go.opentelemetry.io/otel/sdk v1.0.0-RC3
 	go.opentelemetry.io/otel/trace v1.0.0-RC3
 	go.opentelemetry.io/proto/otlp v0.9.0
@@ -64,7 +65,9 @@ replace go.opentelemetry.io/otel/internal/metric => ../../../../internal/metric
 
 replace go.opentelemetry.io/otel/exporters/otlp/otlpmetric => ../../otlpmetric
 
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal => ../internal
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/otlpconfig => ../internal/otlpconfig
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/retry => ../internal/retry
 
 replace go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc => ../../otlpmetric/otlpmetricgrpc
 
