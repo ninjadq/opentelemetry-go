@@ -1,4 +1,4 @@
-module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp
+module github.com/ninjadq/opentelemetry-go/exporters/otlp/otlptrace/otlptracehttp
 
 go 1.15
 
@@ -63,6 +63,8 @@ replace go.opentelemetry.io/otel/trace => ../../../../trace
 replace go.opentelemetry.io/otel/internal/metric => ../../../../internal/metric
 
 replace go.opentelemetry.io/otel/exporters/otlp/otlpmetric => ../../otlpmetric
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal => ../internal
 
 replace go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc => ../../otlpmetric/otlpmetricgrpc
 
